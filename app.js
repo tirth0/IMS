@@ -16,7 +16,7 @@ require('./config/passport')(passport);
 
 //load config
 dotenv.config({ path: './config/config.env'});
-const PORT = process.env.PORT;
+const PORT = 5000 || process.env.PORT;
 const ENV = process.env.NODE_ENV;
 
 //database connection
